@@ -9,12 +9,7 @@ const ConnectDb = sql.connect({
         encrypt:false,
         trustServerCertificate:true
     }
-
 },(error)=>{
-    if(!error)console.log("Connect database successfulty!");
-    else {
-        console.log(error)
-    }
+    console.log(error)
 }) 
-
 export default ConnectDb;
