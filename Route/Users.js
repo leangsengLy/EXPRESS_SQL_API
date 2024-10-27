@@ -10,7 +10,6 @@ userInfo.get('/list/:id',(req,res)=>{
 })
 userInfo.post('/create',(req,res)=>{
     const {Name,Email,PASSWORD} = req.body;
-    console.log(req.body)
     ConnectDb.query(`INSERT INTO USERS VALUES ('${Name}','${Email}','${PASSWORD}',null)`,(err,result)=>{
         console.log(err)
         if(!err){
