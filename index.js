@@ -1,13 +1,4 @@
 const sql  = require('mssql');
-// const pool = createPool({
-//     host:'localhost',
-//     user:'root',
-//     password:'',
-//     database:"SYS_LYZEE",
-//     connectionLimit:10
-// })
-1231dfsfs
-123123
 var config = {
     user: "ly_zee", // Database username
     password: "Work@123", // Database password
