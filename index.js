@@ -3,15 +3,27 @@ const app = express();
 import UserLogin from './Route/UserLogin.js';
 import userInfo from './Route/Users.js';
 app.use(express.json());
+
+//Route
 app.use('/user_login',UserLogin);
 app.use('/user',userInfo);
 app.get('/',(req,res)=>{
     return res.send("Run API ")
 })
+
+//Open Server
 app.listen(4000,()=>{
     console.log("✅ Connection Successful! 💕💕");
 });
 
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------
 //this code below using for connect Microsoft SQL server to express.js
 // var config = {
 //     user: "ly_zee", // Database username
